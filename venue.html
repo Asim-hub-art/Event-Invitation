@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Annual Party | Venue & RSVP</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Venue & RSVP</h1>
+        <p class="tagline">We hope to see you there</p>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="schedule.html">Schedule</a>
+            <a href="venue.html">Venue & RSVP</a>
+        </nav>
+    </header>
+
+    <main class="page-content">
+        <section class="venue-card">
+            <p class="eyebrow">THE PLACE</p>
+            <h2>FAST NUCES Islamabad</h2>
+            <p>Our Annual Party will take place at FAST NUCES Islamabad on 4 November, from 2:00 PM to 5:00 PM.</p>
+            <div class="venue-details">
+                <p><strong>Event:</strong> Annual Party</p>
+                <p><strong>Date:</strong> 4 November</p>
+                <p><strong>Time:</strong> 2:00 - 5:00 PM</p>
+                <p><strong>Venue:</strong> FAST NUCES Islamabad</p>
+            </div>
+            <button type="button" onclick="rsvpMessage()">RSVP</button>
+            <p id="response" aria-live="polite"></p>
+        </section>
+    </main>
+
+    <footer><p>Annual Party · FAST NUCES Islamabad</p></footer>
+    <script>
+        function rsvpMessage() {
+            alert("Thank you for your interest in joining us. See you soon!");
+            console.log("RSVP button clicked.");
+            document.getElementById("response").textContent = "Thank you! We look forward to seeing you.";
+        }
+    </script>
+</body>
+</html>
